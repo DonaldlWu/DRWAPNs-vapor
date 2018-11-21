@@ -12,14 +12,14 @@ POST /notification HTTP/1.1
 Content-Type: application/json
 
 "deviceIds": ["asijealskdjfijdlfkdfialdjsflksadnglakjsdfleaskdjflkjsafldkjfkls",
-    			  "a30b5ebadfasdfasdflkj;asldjflka;fj7f3edsadfasfasfafsfsadf0"],
-	"title": "Is Title",
-    "content": "Content here",
-    "customPayload": {
-    	"custom1": "custom1",
-    	"custom2": 4,
-    	"custom3": ["index0", "index1"]
-    }
+    		  "a30b5ebadfasdfasdflkj;asldjflka;fj7f3edsadfasfasfafsfsadf0dsfdd"],
+"title": "Is Title",
+"content": "Content here",
+"customPayload": {
+"custom1": "custom1",
+"custom2": 4,
+"custom3": ["index0", "index1"]
+
 ```
 
 ### APNs Setting
