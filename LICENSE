@@ -1,0 +1,224 @@
+Last login: Tue Nov 20 19:37:21 on console
+➜  ~ cd Desktop/Project/SPM
+➜  SPM ls -l .
+total 0
+drwxr-xr-x  15 wuderen  staff  480 11 18 21:12 DRWApns
+drwxr-xr-x  10 wuderen  staff  320 11  7 16:05 Future
+drwxr-xr-x  11 wuderen  staff  352 11  9 17:01 RxSwiftInSPM
+drwxr-xr-x  10 wuderen  staff  320 11  8 14:35 Sort
+drwxr-xr-x  10 wuderen  staff  320 11  5 16:04 SwiftGrabber
+drwxr-xr-x  10 wuderen  staff  320 11  5 16:40 TestSPM
+➜  SPM cd Sort
+➜  Sort ls
+Package.swift  README.md      Sort.xcodeproj Sources        Tests
+➜  Sort git init
+Initialized empty Git repository in /Users/wuderen/Desktop/Project/SPM/Sort/.git/
+➜  Sort git:(master) ✗ git st
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	.idea/
+	Package.swift
+	README.md
+	Sources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  Sort git:(master) ✗ git add .
+➜  Sort git:(master) ✗ git cm "initial commit"
+[master (root-commit) 9132a27] initial commit
+ 11 files changed, 251 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .idea/Sort.iml
+ create mode 100644 .idea/codeStyles/Project.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/runConfigurations/Sort_Package.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 .idea/xcode.xml
+ create mode 100644 Package.swift
+ create mode 100644 README.md
+ create mode 100644 Sources/Sort/main.swift
+➜  Sort git:(master) clear
+  1 import Foundation
+  1 # Sort
+  1 sadfasldfkj# Sort
+➜  Sort git:(master) git co -b develop
+Switched to a new branch 'develop'
+➜  Sort git:(develop) vim Sources/Sort/main.swift
+  1 sadfasldfkj# Sort
+➜  Sort git:(develop) ✗ vim README.md
+➜  Sort git:(develop) ✗ git co master
+M	README.md
+M	Sources/Sort/main.swift
+Switched to branch 'master'
+➜  Sort git:(master) ✗ git st
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+	modified:   Sources/Sort/main.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Sort git:(master) ✗ git merge develop
+Already up to date.
+➜  Sort git:(master) ✗ git st
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+  1 sadfasldfkj# Sort
+	modified:   Sources/Sort/main.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Sort git:(master) ✗ git st
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+	modified:   Sources/Sort/main.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Sort git:(master) ✗ vim README.md
+  1 # Sort
+➜  Sort git:(master) ✗ git merge develop
+Already up to date.
+➜  Sort git:(master) ✗ git co develop
+M	README.md
+M	Sources/Sort/main.swift
+Switched to branch 'develop'
+➜  Sort git:(develop) ✗ vim README.md
+➜  Sort git:(develop) ✗ git cm "sec"
+On branch develop
+Changes not staged for commit:
+	modified:   README.md
+	modified:   Sources/Sort/main.swift
+
+no changes added to commit
+➜  Sort git:(develop) ✗ git co master
+M	README.md
+M	Sources/Sort/main.swift
+Switched to branch 'master'
+➜  Sort git:(master) ✗ git merge --no-ff develop
+Already up to date.
+➜  Sort git:(master) ✗ git st
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+	modified:   Sources/Sort/main.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Sort git:(master) ✗ vim README.md
+➜  Sort git:(master) ✗ git cm "2"
+On branch master
+Changes not staged for commit:
+	modified:   README.md
+	modified:   Sources/Sort/main.swift
+
+no changes added to commit
+➜  Sort git:(master) ✗ git add .
+➜  Sort git:(master) ✗ git cm "2"
+[master 8fbe119] 2
+ 2 files changed, 9 insertions(+), 2 deletions(-)
+➜  Sort git:(master) git co develop
+Switched to branch 'develop'
+➜  Sort git:(develop) vim README.md
+➜  Sort git:(develop) ✗ git co master
+error: Your local changes to the following files would be overwritten by checkout:
+	README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+➜  Sort git:(develop) ✗ git cm "dsf"
+On branch develop
+Changes not staged for commit:
+	modified:   README.md
+
+no changes added to commit
+➜  Sort git:(develop) ✗ git add .
+➜  Sort git:(develop) ✗ git co master
+error: Your local changes to the following files would be overwritten by checkout:
+	README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+➜  Sort git:(develop) ✗ git cm "dsf"
+[develop 237a710] dsf
+ 1 file changed, 2 insertions(+)
+➜  Sort git:(develop) git co master
+Switched to branch 'master'
+➜  Sort git:(master) git merge --no-ff develop
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+➜  Sort git:(master) ✗ git st
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Sort git:(master) ✗ git diff README.md
+➜  Sort git:(master) ✗ clear
+➜  Sort git:(master) ✗
+  1                                  Apache License
+  2                            Version 2.0, January 2004
+  3                         http://www.apache.org/licenses/
+  4
+  5    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+  6
+  7    1. Definitions.
+  8
+  9       "License" shall mean the terms and conditions for use, reproduction,
+ 10       and distribution as defined by Sections 1 through 9 of this document.
+ 11
+ 12       "Licensor" shall mean the copyright owner or entity authorized by
+ 13       the copyright owner that is granting the License.
+ 14
+ 15       "Legal Entity" shall mean the union of the acting entity and all
+ 16       other entities that control, are controlled by, or are under common
+ 17       control with that entity. For the purposes of this definition,
+ 18       "control" means (i) the power, direct or indirect, to cause the
+ 19       direction or management of such entity, whether by contract or
+ 20       otherwise, or (ii) ownership of fifty percent (50%) or more of the
+ 21       outstanding shares, or (iii) beneficial ownership of such entity.
+ 22
+ 23       "You" (or "Your") shall mean an individual or Legal Entity
+ 24       exercising permissions granted by this License.
+ 25
+ 26       "Source" form shall mean the preferred form for making modifications,
+ 27       including but not limited to software source code, documentation
+ 28       source, and configuration files.
+ 29
+ 30       "Object" form shall mean any form resulting from mechanical
+ 31       transformation or translation of a Source form, including but
+ 32       not limited to compiled object code, generated documentation,
+ 33       and conversions to other media types.
+ 34
+ 35       "Work" shall mean the work of authorship, whether in Source or
+ 36       Object form, made available under the License, as indicated by a
+ 37       copyright notice that is included in or attached to the work
+ 38       (an example is provided in the Appendix below).
+ 39
+ 40       "Derivative Works" shall mean any work, whether in Source or Object
+ 41       form, that is based on (or derived from) the Work and for which the
+ 42       editorial revisions, annotations, elaborations, or other modifications
+ 43       represent, as a whole, an original work of authorship. For the purposes
+ 44       of this License, Derivative Works shall not include works that remain
+"LICENSE" 202L, 11358C
