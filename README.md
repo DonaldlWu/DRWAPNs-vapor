@@ -16,10 +16,10 @@ Content-Type: application/json
 "title": "Is Title",
 "content": "Content here",
 "customPayload": {
-"custom1": "custom1",
-"custom2": 4,
-"custom3": ["index0", "index1"]
-
+  "custom1": "custom1",
+  "custom2": 4,
+  "custom3": ["index0", "index1"]
+}
 ```
 
 ### APNs Setting
